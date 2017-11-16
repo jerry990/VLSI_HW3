@@ -1,0 +1,275 @@
+ncsim 15.20-s027
+Linux 2.6.32-642.15.1.el6.i686 #1 SMP Fri Feb 24 13:54:50 UTC 2017 i686
+CPU cores: 32
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+ORBIT_SOCKETDIR=/tmp/orbit-cav08
+TERM=xterm
+SHELL=/bin/csh
+HOST=cav
+SSH_CLIENT=140.116.157.8 53561 22
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/cav08/.gtkrc-1.2-gnome2
+WINDOWID=98566148
+OLDPWD=/home/cav08
+QTDIR=/usr/lib/qt-3.3
+QTINC=/usr/lib/qt-3.3/include
+USER=cav08
+GROUP=cavlab
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib::/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib::/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+GNOME_KEYRING_SOCKET=/tmp/keyring-xOjmdg/socket
+HOSTTYPE=i386-linux
+SSH_AUTH_SOCK=/tmp/keyring-xOjmdg/socket.ssh
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2700,unix/unix:/tmp/.ICE-unix/2700
+PATH=/usr/cad/spring_soft/verdi/cur/bin:/usr/cad/spring_soft/verdi/cur/nLint/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/spring_soft/verdi/cur/bin:/usr/cad/spring_soft/verdi/cur/nLint/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/lib/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin
+MAIL=/var/spool/mail/cav08
+PWD=/home/cav08/Desktop/Prob1
+LANG=en_US.UTF-8
+KDE_IS_PRELINKED=1
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+KDEDIRS=/usr
+LM_LICENSE_FILE=26585@lsncku:5280@lscic:5280@lsnchu:5280@lscic:5280@lsntu:5280@lsncku:
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HOME=/home/cav08
+SHLVL=2
+OSTYPE=linux
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+VENDOR=intel
+MACHTYPE=i386
+LOGNAME=cav08
+QTLIB=/usr/lib/qt-3.3/lib
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4BSzdu84Pt,guid=e75b7092e4298bf2ecb64f960068a861
+SSH_CONNECTION=140.116.157.8 53561 140.116.157.14 22
+MODULESHOME=/usr/share/Modules
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SHLIB_PATH=/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX
+DISPLAY=localhost:16.0
+G_BROKEN_FILENAMES=1
+COLORTERM=gnome-terminal
+REMOTEHOST=cav
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=top_tb.sv
+argv[2]=+define+prog0
+argv[3]=+assess+r
+76 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.010 user,  57.61M sys,  0.00M vm
+77 VC callback profile - scalar:0 vector:0
+78 Wed Nov 15 05:51:04 2017
+79 pliAppInit
+80 *Verdi3* : Enable Parallel Dumping.
+81 pliAppMiscSet: New Sim Round
+82 LIBSSCORE=found /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius122.so through $LD_LIBRARY_PATH setting.
+83 argv[0]: top.fsdb
+84 argv[0]: 0
+85 argv[1]: (handle)0xb08bd68 top_tb
+86 Catch signal 11. Stack trace follows:
+#0  0xb77e5424 in __kernel_vsyscall ()
+#1  0x00271b93 in __read_nocancel () from /lib/libc.so.6
+#2  0x0020b39b in _IO_new_file_underflow () from /lib/libc.so.6
+#3  0x0020d0bb in _IO_default_uflow_internal () from /lib/libc.so.6
+#4  0x0020e6ca in __uflow () from /lib/libc.so.6
+#5  0x00200fdc in _IO_getline_info_internal () from /lib/libc.so.6
+#6  0x00200f21 in _IO_getline_internal () from /lib/libc.so.6
+#7  0x001ffe5a in fgets () from /lib/libc.so.6
+#8  0xb69572b9 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius122.so
+#9  0xb6980763 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius122.so
+#10 0xb6956df1 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius122.so
+#11 <signal handler called>
+#12 0x0af10d62 in ?? ()
+#13 0x0af2b804 in ?? ()
+87 FSDB Dumper for IUS, Release Verdi3_2013.07, Linux, 07/04/2013
+88 (C) 1996 - 2013 by Synopsys, Inc.
+89 ***********************************************************************
+90 *  WARNING -                                                          *
+91 *  The simulator version is newer than the FSDB dumper version which  *
+92 *  may cause abnormal behavior, please contact Synopsys support for   *
+93 *  assistance.                                                        *
+94 ***********************************************************************
+95 sps_call_fsdbDumpfile at 0 : /home/cav08/Desktop/Prob1/top_tb.sv(105)
+96 argv[0]: top.fsdb
+97 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+98 *Verdi3* : Create FSDB file 'top.fsdb'
+99 sps_call_fsdbDumpvars at 0 : /home/cav08/Desktop/Prob1/top_tb.sv(106)
+100 argv[0]: 0
+101 argv[1]: (handle)0xb08bd60 top_tb
+102 *Verdi3* : Begin traversing the scope (top_tb), layer (0).
+103 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.clk(48)
+104 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.rst(48)
+105 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_enable(48)
+106 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_address(48)
+107 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_write(48)
+108 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_enable(48)
+109 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_in(48)
+110 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_address(48)
+111 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_out(48)
+112 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_out(48)
+113 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.GOLDEN(116)
+114 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.i(25)
+115 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.err(25)
+116 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_enable(48)
+117 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_address(48)
+118 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_write(48)
+119 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_enable(48)
+120 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_in(48)
+121 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_address(48)
+122 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.clk(36)
+123 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.rst(36)
+124 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_out(36)
+125 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_out(36)
+126 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_enable(48)
+127 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_address(48)
+128 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_enable(48)
+129 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_write(48)
+130 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_address(48)
+131 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_in(48)
+132 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.imm(48)
+133 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rs(48)
+134 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rt(48)
+135 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IF_ID(48)
+136 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ID_EXe(48)
+137 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.EX_MEM(48)
+138 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.MEM_WBack(48)
+139 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_in2(48)
+140 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out(48)
+141 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out_p(48)
+142 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out_p1(48)
+143 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.zero(48)
+144 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.s_id(48)
+145 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_enable_p(48)
+146 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_write_p(48)
+147 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.sw_data(48)
+148 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_out(48)
+149 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.lui_p(48)
+150 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.lui_p1(48)
+151 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.forward_A(48)
+152 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.forward_B(48)
+153 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_input_sky(48)
+154 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_input_floor(48)
+155 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.zero_max(48)
+156 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.flush(48)
+157 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.clk(36)
+158 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rst(36)
+159 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_out(36)
+160 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_out(36)
+161 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.sel(48)
+162 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rs(48)
+163 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rt(48)
+164 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.sw_data(48)
+165 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.zero_max(48)
+166 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.flush(48)
+167 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.mem(116)
+168 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.wb_data(36)
+169 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.clk(36)
+170 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rst(36)
+171 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.IF_ID(36)
+172 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.pc_p(36)
+173 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.MEM_WB(36)
+174 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.unmblk1.i(612)
+175 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.imm(48)
+176 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.IF_ID(36)
+177 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.clk(36)
+178 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.rst(36)
+179 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.OUT(48)
+180 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.sel(36)
+181 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.IN_1(36)
+182 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.IN_2(36)
+183 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.forward_A(48)
+184 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.forward_B(48)
+185 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.EX_MEM(36)
+186 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.ID_EX(36)
+187 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.MEM_WB(36)
+188 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.alu_input_sky(48)
+189 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.in_normal(36)
+190 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.alu_result(36)
+191 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.mem_result(36)
+192 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.forward_A(36)
+193 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.alu_input_floor(48)
+194 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.in_normal(36)
+195 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.alu_result(36)
+196 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.mem_result(36)
+197 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.forward_B(36)
+198 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.out(48)
+199 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.zero(48)
+200 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.DM_enable(48)
+201 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.DM_write(48)
+202 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.ID_EX_wire(48)
+203 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.ID_EX(36)
+204 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.IN_1(36)
+205 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.IN_2(36)
+206 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.wb_out(48)
+207 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.MEM_WBk(36)
+208 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.alu_out(36)
+209 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.DM_out(36)
+210 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.lui_out(36)
+211 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_out(48)
+212 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.clk(36)
+213 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.rst(36)
+214 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_enable(36)
+215 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_write(36)
+216 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_in(36)
+217 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_address(36)
+218 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.unmblk1.i(25)
+219 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_out(48)
+220 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.clk(36)
+221 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.rst(36)
+222 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_enable(36)
+223 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_in(36)
+224 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_write(36)
+225 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_address(36)
+226 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.unmblk1.i(25)
+227 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.result.err(25)
+228 *Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.unmblk1.i(612)
+229 *Verdi3* : End of traversing.
+230 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.020 user,  199.87M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  3.58M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  3.58M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  3.58M sys,  0.00M vm
+
+          Count usage: 1 var,  1 idcode,  1 callback
+                 incr: 1 var,  1 idcode,  1 callback
+                 accu: 1 var,  1 idcode,  1 callback
+            accu incr: 1 var,  1 idcode,  1 callback
+231 VC callback profile - scalar:0 vector:0
+232 Wed Nov 15 05:51:04 2017
+233 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.020 sys,  0.020 user,  200.92M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  4.63M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 1 var,  1 idcode,  1 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 1 var,  1 idcode,  1 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+234 VC callback profile - scalar:0 vector:1
+235 Wed Nov 15 05:51:04 2017
+236 End of simulation at 20002000
+237 VC callback profile - scalar:0 vector:2
+238 Wed Nov 15 05:51:04 2017
+239 Parallel profile    -  Flush:2 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+240 SimExit
+241 Sim process exit

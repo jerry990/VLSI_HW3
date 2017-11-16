@@ -1,0 +1,175 @@
+`include "RegFile.sv"
+`include "immgen.sv"
+`include "ALU.sv"
+`include "rt_mux.sv"
+`include "wb_mux.sv"
+`include "forwardingA_mux.sv"
+`include "forwardingB_mux.sv"
+`include "forwarding_unit.sv"
+`define B_type 7'b110_0011
+`define JAL 7'b110_1111 
+
+
+module CPU(input clk,  
+           input rst,
+           input [31:0] IM_out,
+           input [31:0] DM_out,
+           output logic IM_enable,
+           
+           output logic [31:0] IM_address,
+           output logic DM_enable,
+           output logic DM_write,
+           output logic [31:0] DM_address,  
+           output logic [31:0] DM_in
+           
+        );
+  
+  logic [31:0] imm;
+  logic [31:0] rs,rt;
+  //===============================================//
+  //=============**pipe_line**====================//
+  //=============================================//
+  logic [31:0] IF_ID;
+  logic [31:0] ID_EXe;
+  logic [31:0] EX_MEM;
+  logic [31:0] MEM_WBack;
+  
+  logic [31:0] alu_in2,alu_out,alu_out_p,alu_out_p1;
+  logic zero;
+  logic s_id;  
+  logic  DM_enable_p;
+  logic  DM_write_p;
+  
+  logic [31:0] sw_data;
+  logic [31:0] wb_out;
+  logic [31:0] lui_p,lui_p1;
+  //=======forwarding=================//
+  logic [1:0] forward_A;
+  logic [1:0] forward_B;
+  logic [31:0] alu_input_sky;
+  RegFile RF1 (.wb_data(wb_out), 
+               .clk(clk),
+               .rst(rst),
+               .IF_ID({IF_ID[24:15],IF_ID[11:0]}),
+               .pc_p(IM_address),
+               .MEM_WB(MEM_WBack),
+               .sel(s_id),
+               
+               .rs(rs),
+               
+               
+               .rt(rt), 
+               .sw_data(sw_data)
+               );   
+  immgen immgenator(
+            .IF_ID(IF_ID), 
+            .clk(clk),
+            .rst(rst),
+            .imm(imm)
+               );
+  mux  id_MUX(
+            .sel(s_id),
+            .IN_1(rt),
+            .IN_2(imm),
+            .OUT(alu_in2)
+            );
+  fw_unit f_U(.EX_MEM(EX_MEM),  //transfer EX_MEM Regwrite and reg_destination
+               .ID_EX(ID_EXe),   //transfer rs rt
+			   .MEM_WB(MEM_WBack),
+			   .forward_A(forward_A),
+			   .forward_B(forward_B)
+			   );
+  forwardingA_mux fA_mux(
+                        .in_normal(rs),
+						.alu_result(alu_out_p),
+						.mem_result(DM_out),
+						.forward_A(forward_A),
+						.alu_input_sky(alu_input_sky)
+                         );
+  forwardingB_mux fB_mux(
+                        .in_normal(alu_in2),
+						.alu_result(alu_out_p),
+						.mem_result(DM_out),
+						.forward_B(forward_B),
+						.alu_input_floor(alu_input_floor)
+                         );						 
+  ALU  ALU1(
+          .ID_EX(ID_EXe),
+          .IN_1(alu_input_sky),
+          .IN_2(alu_input_floor),
+          .out(alu_out),
+          .zero(zero),
+          .DM_enable(DM_enable_p),
+          .DM_write(DM_write_p)
+        ); 
+  wb_mux   wb_mux1(
+               .MEM_WBk( MEM_WBack[6:0]), 
+               .alu_out(alu_out_p1), 
+               .DM_out(DM_out),
+               .lui_out(lui_p1),              
+               .wb_out(wb_out));
+  //always_comb 
+  //  IM_enable = 1'b1;
+//===========IF/ID=============
+  always_ff@(posedge clk) begin
+    if(rst) begin
+      IM_address <= 32'h0000_0000;
+      IF_ID <= 32'h0000_0000;
+      IM_enable <= 1'b1;
+    end  
+    else begin
+      IF_ID <= IM_out;
+      if((zero) && (EX_MEM[6:0] == `B_type)) begin//7-bit
+        IM_address <= IM_address - 32'd16 + {{20{EX_MEM[31]}},EX_MEM[7],EX_MEM[30:25],EX_MEM[11:8],1'b0};               
+      end    
+      else if(IF_ID[6:0] == `JAL) begin
+        IM_address <= IM_address + {{12{IF_ID[31]}},IF_ID[19:12],IF_ID[20],IF_ID[30:21],1'b0}-32'd8;
+      end
+      else   
+        IM_address <= IM_address + 32'd4;  
+    end             
+  end
+//===========ID/EXE============== //
+  always_ff@(posedge clk) begin
+    if(rst) begin
+      lui_p <= 32'h0000_0000;
+      ID_EXe <= 32'h0000_0000;
+    end
+    else begin
+      lui_p <= imm;
+      ID_EXe <= IF_ID;
+      //rs1 <= rs;
+      //rs2 <= alu_in2;
+    end
+  end 
+//===========EXE/MEM============//
+  always_ff@(posedge clk) begin
+    if(rst) begin
+      EX_MEM <= 32'h0000_0000;
+      DM_in <= 32'h0000_0000;
+      DM_enable <= 1'b0;
+      DM_write <= 1'b0;
+      DM_address <= 32'h0000_0000;
+    end
+    else begin 
+      DM_enable <= DM_enable_p;
+      DM_write <= DM_write_p;
+      DM_address <= alu_out;
+      alu_out_p <= alu_out;
+      alu_out_p1 <= alu_out_p;
+      EX_MEM <= ID_EXe;
+     // EX_MEM_1 <= EX_MEM;
+      DM_in <= sw_data;
+      lui_p1 <= lui_p;
+    end  
+  end
+//============MEM/WB===========//
+  always_ff@(posedge clk) begin
+    if(rst) begin
+      MEM_WBack <= 32'h0000_0000;
+    end
+    else begin
+      MEM_WBack <= EX_MEM;
+    end 
+  end
+endmodule

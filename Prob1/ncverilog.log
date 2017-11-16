@@ -1,0 +1,347 @@
+ncverilog: 15.20-s027: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s027: Started on Nov 15, 2017 at 05:51:02 EST
+ncverilog
+	top_tb.sv
+	+define+prog0
+	+assess+r
+Recompiling... reason: file './forwarding_unit.sv' is newer than expected.
+	expected: Wed Nov 15 05:43:31 2017
+	actual:   Wed Nov 15 05:50:59 2017
+file: top_tb.sv
+	module worklib.RegFile:sv
+		errors: 0, warnings: 0
+	module worklib.immgen:sv
+		errors: 0, warnings: 0
+	module worklib.ALU:sv
+		errors: 0, warnings: 0
+	module worklib.mux:sv
+		errors: 0, warnings: 0
+	module worklib.wb_mux:sv
+		errors: 0, warnings: 0
+	module worklib.forwardingA_mux:sv
+		errors: 0, warnings: 0
+	module worklib.forwardingB_mux:sv
+		errors: 0, warnings: 0
+	module worklib.fw_unit:sv
+		errors: 0, warnings: 0
+	module worklib.CPU:sv
+		errors: 0, warnings: 0
+module RegFile(  input [31:0] wb_data,
+             |
+ncvlog: *W,RECOME (./RegFile.sv,8|13): recompiling design unit worklib.RegFile:sv.
+	First compiled from line 8 of RegFile.sv.
+(`include file: ./RegFile.sv line 8, `include file: ./CPU.sv line 1, file: top_tb.sv line 9)
+	module worklib.RegFile:sv
+		errors: 0, warnings: 1
+module immgen(input [31:0]        IF_ID,
+            |
+ncvlog: *W,RECOME (./immgen.sv,5|12): recompiling design unit worklib.immgen:sv.
+	First compiled from line 5 of immgen.sv.
+(`include file: ./immgen.sv line 5, `include file: ./CPU.sv line 2, file: top_tb.sv line 9)
+	module worklib.immgen:sv
+		errors: 0, warnings: 1
+module ALU(//input clk,
+         |
+ncvlog: *W,RECOME (./ALU.sv,28|9): recompiling design unit worklib.ALU:sv.
+	First compiled from line 28 of ALU.sv.
+(`include file: ./ALU.sv line 28, `include file: ./CPU.sv line 3, file: top_tb.sv line 9)
+	module worklib.ALU:sv
+		errors: 0, warnings: 1
+module mux( input sel,
+         |
+ncvlog: *W,RECOME (./rt_mux.sv,1|9): recompiling design unit worklib.mux:sv.
+	First compiled from line 1 of rt_mux.sv.
+(`include file: ./rt_mux.sv line 1, `include file: ./CPU.sv line 4, file: top_tb.sv line 9)
+	module worklib.mux:sv
+		errors: 0, warnings: 1
+module wb_mux(
+            |
+ncvlog: *W,RECOME (./wb_mux.sv,1|12): recompiling design unit worklib.wb_mux:sv.
+	First compiled from line 1 of wb_mux.sv.
+(`include file: ./wb_mux.sv line 1, `include file: ./CPU.sv line 5, file: top_tb.sv line 9)
+	module worklib.wb_mux:sv
+		errors: 0, warnings: 1
+module forwardingA_mux(input logic [31:0]in_normal,
+                     |
+ncvlog: *W,RECOME (./forwardingA_mux.sv,1|21): recompiling design unit worklib.forwardingA_mux:sv.
+	First compiled from line 1 of forwardingA_mux.sv.
+(`include file: ./forwardingA_mux.sv line 1, `include file: ./CPU.sv line 6, file: top_tb.sv line 9)
+	module worklib.forwardingA_mux:sv
+		errors: 0, warnings: 1
+module forwardingB_mux(input logic [31:0]in_normal,
+                     |
+ncvlog: *W,RECOME (./forwardingB_mux.sv,1|21): recompiling design unit worklib.forwardingB_mux:sv.
+	First compiled from line 1 of forwardingB_mux.sv.
+(`include file: ./forwardingB_mux.sv line 1, `include file: ./CPU.sv line 7, file: top_tb.sv line 9)
+	module worklib.forwardingB_mux:sv
+		errors: 0, warnings: 1
+module fw_unit(input logic [31:0]EX_MEM,  //transfer EX_MEM Regwrite and reg_destination
+             |
+ncvlog: *W,RECOME (./forwarding_unit.sv,1|13): recompiling design unit worklib.fw_unit:sv.
+	First compiled from line 1 of forwarding_unit.sv.
+(`include file: ./forwarding_unit.sv line 1, `include file: ./CPU.sv line 8, file: top_tb.sv line 9)
+	module worklib.fw_unit:sv
+		errors: 0, warnings: 1
+module CPU(input clk,  
+         |
+ncvlog: *W,RECOME (./CPU.sv,13|9): recompiling design unit worklib.CPU:sv.
+	First compiled from line 13 of CPU.sv.
+(`include file: ./CPU.sv line 13, file: top_tb.sv line 9)
+	module worklib.CPU:sv
+		errors: 0, warnings: 1
+        $fscanf(gf,"%d\n",GOLDEN[i]);
+              |
+ncvlog: *W,NOSYST (top_tb.sv,79|14): System function '$fscanf' invoked as a task. Return value will be ignored.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+               .IF_ID({IF_ID[24:15],IF_ID[11:0]}),
+                      |
+ncelab: *W,CUVMPW (./CPU.sv,57|22): port sizes differ in port connection (22/23).
+						.forward_B(forward_B),
+						                   |
+ncelab: *W,CUVMPW (./CPU.sv,99|25): port sizes differ in port connection (2/3).
+    .IM_address(IM_address[17:2]),
+                         |
+ncelab: *W,CUVMPW (./top_tb.sv,49|25): port sizes differ in port connection (16/32).
+    .DM_write(DM_write),
+                     |
+ncelab: *W,CUVMPW (./top_tb.sv,57|21): port sizes differ in port connection (1/32).
+    .DM_address(DM_address[17:2]),
+                         |
+ncelab: *W,CUVMPW (./top_tb.sv,60|25): port sizes differ in port connection (16/32).
+      $readmemh("./prog0/IM_data.dat",IM1.mem_data);
+                                                 |
+ncelab: *W,MEMODR (./top_tb.sv,74|49): $readmem default memory order incompatible with IEEE1364.
+      $readmemh("./prog0/DM_data.dat",DM1.mem_data); 
+                                                 |
+ncelab: *W,MEMODR (./top_tb.sv,75|49): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ALU:sv <0x36edbf8e>
+			streams:   1, words:  4449
+		worklib.CPU:sv <0x0d14bcb6>
+			streams:  44, words: 10809
+		worklib.RegFile:sv <0x664d5dfe>
+			streams:  13, words:  7814
+		worklib.forwardingA_mux:sv <0x510c11a8>
+			streams:   1, words:   259
+		worklib.forwardingB_mux:sv <0x4f8dd678>
+			streams:   1, words:   256
+		worklib.fw_unit:sv <0x5160c33b>
+			streams:   1, words:  1522
+		worklib.immgen:sv <0x72192063>
+			streams:   2, words:   865
+		worklib.mux:sv <0x32030e16>
+			streams:   1, words:   212
+		worklib.wb_mux:sv <0x7a8be278>
+			streams:   1, words:   346
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 13      13
+		Registers:               79      79
+		Scalar wires:            32       -
+		Vectored wires:          69       -
+		Always blocks:           15      15
+		Initial blocks:           2       2
+		Pseudo assignments:      53      53
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top_tb:sv
+Loading snapshot worklib.top_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi3* Loading libsscore_ius122.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi3_2013.07, Linux, 07/04/2013
+(C) 1996 - 2013 by Synopsys, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'top.fsdb'
+*Verdi3* : Begin traversing the scope (top_tb), layer (0).
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.clk(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.rst(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_write(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_in(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.GOLDEN(116)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.i(25)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.err(25)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_write(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_in(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.IM_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.DM_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_write(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_address(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_in(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.imm(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rs(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rt(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IF_ID(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ID_EXe(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.EX_MEM(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.MEM_WBack(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_in2(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out_p(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_out_p1(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.zero(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.s_id(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_enable_p(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_write_p(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.sw_data(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.lui_p(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.lui_p1(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.forward_A(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.forward_B(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_input_sky(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.alu_input_floor(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.zero_max(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.flush(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.IM_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.DM_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.sel(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rs(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rt(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.sw_data(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.zero_max(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.flush(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.mem(116)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.wb_data(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.IF_ID(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.pc_p(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.MEM_WB(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.RF1.unmblk1.i(612)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.imm(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.IF_ID(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.immgenator.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.OUT(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.sel(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.IN_1(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.id_MUX.IN_2(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.forward_A(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.forward_B(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.EX_MEM(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.ID_EX(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.f_U.MEM_WB(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.alu_input_sky(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.in_normal(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.alu_result(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.mem_result(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fA_mux.forward_A(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.alu_input_floor(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.in_normal(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.alu_result(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.mem_result(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.fB_mux.forward_B(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.zero(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.DM_enable(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.DM_write(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.ID_EX_wire(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.ID_EX(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.IN_1(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.ALU1.IN_2(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.wb_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.MEM_WBk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.alu_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.DM_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.TOP.CPU1.wb_mux1.lui_out(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_enable(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_write(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_in(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.IM_address(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.IM1.unmblk1.i(25)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_out(48)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.clk(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.rst(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_enable(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_in(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_write(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.DM_address(36)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.DM1.unmblk1.i(25)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.result.err(25)
+*Verdi3* WARNING: [NoReadAccess][FilterOut]Name:top_tb.unmblk1.i(612)
+*Verdi3* : End of traversing.
+Running prog0
+
+Done
+
+DM[ 1]=        99, pass
+DM[ 2]=         1, pass
+DM[ 3]=       100, pass
+DM[ 4]=         1, pass
+DM[ 5]=         2, pass
+DM[ 6]=         1, pass
+DM[ 7]=         3, pass
+DM[ 8]=        50, pass
+DM[ 9]=       118, pass
+DM[10]=        98, pass
+DM[11]=         1, pass
+DM[12]=       321, pass
+DM[13]=      1367, pass
+DM[14]=      1281, pass
+DM[15]=         8, pass
+DM[16]=         1, pass
+DM[17]=         1, pass
+DM[18]=      4096, pass
+DM[19]=         3, pass
+DM[20]=       112, pass
+DM[21]=      1060, pass
+DM[22]=         0, pass
+DM[23]=         0, pass
+DM[24]=         0, pass
+DM[25]=         0, pass
+DM[26]=         0, pass
+DM[27]=         0, pass
+DM[28]=         0, pass
+DM[29]=         0, pass
+DM[30]=         0, pass
+DM[31]=         0, pass
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  Congratulations !!    **      / O.O  | 
+        **                        **    /_____   | 
+        **  Simulation PASS!!     **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        *************** ************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 200020 NS + 0
+./top_tb.sv:100     $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s027: Exiting on Nov 15, 2017 at 05:51:04 EST  (total: 00:00:02)
